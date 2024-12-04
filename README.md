@@ -1,2 +1,4 @@
 # WebSocket
-Chat using websocket
+### README
+
+This is a simple chat application using WebSockets in Python. To use it, first run the server by executing `servidor_chat.py` on the machine hosting the chat. Ensure the server machine's local IP address is used in the `HOST` variable of `cliente_chat.py` on all client machines. Both server and clients must be on the same local network. To run the server, execute `python servidor_chat.py`, and it will listen for connections on port 9002. To run a client, execute `python cliente_chat.py` after updating the `HOST` variable to point to the server's IP. Clients can send messages that are broadcast to all other connected clients. Ensure Python 3.6+ is installed on all machines, and no additional libraries are required. If running on different machines, verify that firewalls allow connections on port 9002.
